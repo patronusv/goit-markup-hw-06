@@ -285,14 +285,23 @@
     <form action="" class="modal-form modal-js-speaker-form">
       <div class="form-group">
         <label for="modal-name" class="modal-label">Имя</label>
+        <div class="modal-icon-container"><svg class="modal-icon" width="18px" height="18px">
+          <use href="./images/studio/symbol-defs.svg#form-name"></use>
+        </svg></div>
         <input type="text" name="name" id="modal-name" class="modal-input">
       </div>
       <div class="form-group">
           <label for="modal-tel" class="modal-label">Телефон</label>
+          <div class="modal-icon-container"><svg class="modal-icon" width="18px" height="18px">
+            <use href="./images/studio/symbol-defs.svg#form-tel"></use>
+          </svg></div>
           <input type="tel" name="tel" id="modal-tel" class="modal-input">
        </div>
       <div class="form-group">
         <label for="modal-email" class="modal-label">Почта</label>
+        <div class="modal-icon-container"><svg class="modal-icon" width="18px" height="18px">
+            <use href="./images/studio/symbol-defs.svg#form-mail"></use>
+          </svg></div>
         <input type="text" name="email" id="modal-email" class="modal-input">
       </div>
       <div class="form-group-comment">
@@ -300,8 +309,8 @@
         <textarea class="modal-comment" name="comment" id="modal-comment" cols="" rows="" placeholder="Введите текст"></textarea>
       </div>
       <div class="checkbox-group">
-        <input type="checkbox" name="agree" id="modal-agree" value="agree">
-        <label for="modal-agree" class="modal-label-agree">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a></label>
+          <label for="modal-agree" class="modal-label-agree">
+            <input type="checkbox" class="modal-checkbox-hidden" name="agree" id="modal-agree" value="agree"><span class="modal-checkbox"></span>Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a></label>
       </div>
       <button type="submit" class="modal-submit">Отправить</button>
     </form>
