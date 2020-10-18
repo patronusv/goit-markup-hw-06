@@ -504,6 +504,10 @@ body {
   border-radius: 4px;
   border-width: 0;
 }
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: #188ce8;
+}
 .footer-subscribe-icon {
   margin-left: 10px;
 }
@@ -699,12 +703,15 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
-  background: #188ce8;
+  background: var(--accent-color);
   border: 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
+.modal-submit:hover,
+.modal-submit:focus {
+  background-color: #188ce8;
+}
 /* Портфолио */
 
 .portfolio-button {
