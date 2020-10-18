@@ -199,6 +199,7 @@
             </ul>
         </div>
       </section>
+      <!-- Постоянные клиенты -->
       <section class="section"><div class="container">
         <h2 class="section-header">Постоянные клиенты</h2>
         <ul class="list client-list">
@@ -238,7 +239,7 @@
         </address>
         </div>
         <div class="footer-social">
-          <p class="footer-social-text">присоединяйтесь</p>
+          <p class="footer-call-to-action">присоединяйтесь</p>
           <ul class="footer-social-links list">
             <li class="footer-social-links-item"><a class="footer-social-links-link hover" href=""><svg class="footer-social-links-icon" width="20px" height="20px">
               <use href="./images/studio/symbol-defs.svg#instagram"></use>
@@ -260,13 +261,54 @@
               </a></li>
           </ul>
         </div>
+        <div class="footer-subscribe-form">
+          <p class="footer-call-to-action">Подпишитесь на рассылку</p>
+          <form action="" class="js-speaker-form">
+            <div class="form-group-footer">
+              <label for="subscribe-form-email"></label>
+              <input type="email" name="subscribe-email" id="subscribe-form-email" class="footer-subscribe-email">
+              <button type="submit" class="footer-subscribe-button">Подписаться<svg class="footer-subscribe-icon" width="24px"
+                  height="24px">
+                  <use href="./images/studio/symbol-defs.svg#subscribe"></use>
+                </svg></button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal"><button class="close-modal hover" data-modal-close><svg class="close-icon" width="11px" height="11px">
         <use href="./images/studio/symbol-defs.svg#close"></use>
-      </svg></button></div>
+      </svg></button>
+    <p class="modal-call-to-action">Оставьте свои данные, мы вам перезвоним</p>
+    <form action="" class="modal-form modal-js-speaker-form">
+      <div class="form-group">
+        <label for="modal-name" class="modal-label">Имя</label>
+        <input type="text" name="name" id="modal-name">
+      </div>
+      <div class="form-group">
+          <label for="modal-tel" class="modal-label">Телефон</label>
+          <input type="tel" name="tel" id="modal-tel">
+       </div>
+      <div class="form-group">
+        <label for="modal-email" class="modal-label">Почта</label>
+        <input type="text" name="email" id="modal-email">
+      </div>
+      <div class="form-group">
+        <label for="modal-comment">Комментарий</label>
+        <textarea name="comment" id="modal-comment" cols="30" rows="10"></textarea>
+      </div>
+      <div class="">
+        <input type="checkbox" name="agree" id="modal-agree" value="agree">
+        <label for="modal-agree">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a></label>
+      </div>
+      <button type="submit">Отправить</button>
+    </form>
     </div>
+    </div>
+    <!-- Скрипты -->
     <script src="./js/modal.js"></script>
+    <script src="./js/submit.js"></script>
   </body>
 </html>
